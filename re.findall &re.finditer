@@ -1,0 +1,9 @@
+import re
+text=r'[aeiouAEIOU^]?[aeiouAEIOU]{2,}[^aeiouAEIOU$]'
+n=input()
+value=re.findall(text,n)
+if value:
+    for i in value:
+        print(i[:-1])
+else:
+    print(-1)
